@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+  
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#title {
+  margin: 10px 0 5px 0;
+  font-size: 2rem;
+}
+
+#instructions-container {
+  margin-bottom: 20px;
+}
+
+#instructions {
+  color: #777;
+  font-style: italic;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+#drawingArea {
+  border: 2px solid #333;
+  width: 90%;
+  max-width: 600px;
+  height: calc(100vh - 200px);
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.shape {
+  position: absolute;
+  transform-origin: center;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid #333;
+}
+
+.line {
+  background-color: #333;
+}
+
+.ring {
+  border-radius: 50%;
+  border-style: solid;
+}
+
+footer {
+  margin-top: auto;
+  font-size: 0.8rem;
+  color: #000;
+  text-align: center;
+  padding: 10px 0;
+}
